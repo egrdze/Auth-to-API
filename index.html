@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auth Interface</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; max-width: 500px; margin: auto; }
+    input, button { display: block; margin: 10px 0; padding: 8px; width: 100%; box-sizing: border-box; }
+    button { cursor: pointer; }
+    .output { margin-top: 20px; white-space: pre-wrap; background: #eee; padding: 10px; }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h2>Регистрация</h2>
+  <input type="text" id="regUsername" placeholder="Username">
+  <input type="email" id="regEmail" placeholder="Email">
+  <input type="password" id="regPassword" placeholder="Password">
+  <button onclick="register()">Зарегистрироваться</button>
+  <h2>Вход</h2>
+  <input type="email" id="loginEmail" placeholder="Email">
+  <input type="password" id="loginPassword" placeholder="Password">
+  <button onclick="login()">Войти</button>
+  <h2>Данные пользователя</h2>
+  <button onclick="getCurrentUser()">Получить текущего пользователя</button>
+  <div class="output" id="output"></div>
+</body>
+</html>
